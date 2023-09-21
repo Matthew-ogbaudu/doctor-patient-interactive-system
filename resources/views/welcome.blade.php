@@ -62,7 +62,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#hero">Home</a>
+                        <a class="nav-link" href="#hero">Dashboard</a>
                     </li>
 
                     <li class="nav-item">
@@ -82,8 +82,12 @@
                         <a class="nav-link" href="#reviews">Testimonials</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/doctors">Doctors</a>
+                        <a class="nav-link" href="/register">Doctors</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/patient">Patient</a>
+                    </li>
+
 
                     <li class="nav-item">
                         <a class="nav-link" href="#booking">Booking</a>
@@ -522,7 +526,7 @@ https://templatemo.com/tm-566-medic-care
 {{--            @if (Route::has('login'))--}}
 {{--                <div class="sm:fixed sm:top-0 sm:right-0 p-6 text-right z-10">--}}
 {{--                    @auth--}}
-{{--                        <a href="{{ url('/home') }}" class="font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Home</a>--}}
+{{--                        <a href="{{ url('/dashboard') }}" class="font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Dashboard</a>--}}
 {{--                    @else--}}
 {{--                        <a href="{{ route('login') }}" class="font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Log in</a>--}}
 

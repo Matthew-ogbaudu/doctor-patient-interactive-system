@@ -2,6 +2,7 @@
 <body>
 <section class="login">
     <div class="login_box">
+        <a href="/login"> TAKE ME TO LOGIN</a>
         <div class="left">
             <div class="top_link"><a href="/"><img src="https://drive.google.com/u/0/uc?id=16U__U5dJdaTfNGobB_OpwAJ73vM50rPV&export=download" alt="">Return home</a></div>
             <div class="contact">
@@ -10,9 +11,10 @@
                     <input type="text" placeholder="FIRSTNAME" name="firstname">
                     <input type="text" placeholder="LASTNAME" name="lastname">
                     <input type="text" placeholder="EMAIL" name="email">
-                    <input type="text" placeholder="PHONE NUMBER" name="phonenumber"
+                    <input type="text" placeholder="PHONE NUMBER" name="phonenumber">
                     <input type="text" placeholder="PASSWORD" name="password">
                     <button class="submit">LET'S GO</button>
+
                 </form>
             </div>
         </div>

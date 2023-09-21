@@ -30,5 +30,13 @@ return [
         'secret' => env('AWS_SECRET_ACCESS_KEY'),
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
+    'mailchimp'=>[
+        'key'=>env('MAILCHIMP_KEY')
+    ],
 
+    // 'google'=>[
+    //     'client_id'=>'543370502043-t8gsm4avs9oek4a31s411aakputbb9fn.apps.googleusercontent.com',
+    //     'client_secret'=>'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',
+    //     'redirect'=>'http://127.0.0.1:8000/auth/google/callback'
+    // ]
 ];

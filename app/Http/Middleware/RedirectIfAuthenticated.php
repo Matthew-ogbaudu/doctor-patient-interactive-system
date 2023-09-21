@@ -13,7 +13,7 @@ class RedirectIfAuthenticated
     /**
      * Handle an incoming request.
      *
-     * @param  \Closure(\Illuminate\Http\Request): (\Symfony\Component\HttpFoundation\Response)  $next
+     * @param \Closure(\Illuminate\Http\Request): (\Symfony\Component\HttpFoundation\Response) $next
      */
     public function handle(Request $request, Closure $next, string ...$guards): Response
     {
@@ -23,8 +23,16 @@ class RedirectIfAuthenticated
             if (Auth::guard($guard)->check()) {
                 return redirect(RouteServiceProvider::HOME);
             }
-        }
+            if ($guard == "patient" && Auth::guard($guard)->check()) {
+                return redirect('/patient');
+            }
+            if (Auth::guard($guard)->check()) {
+                return redirect('/');
+            }
 
+
+        }
         return $next($request);
     }
 }
+
